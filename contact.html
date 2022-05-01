@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="stylesheet" href="Css/media.css">
+    <link rel="shortcut icon" href="ImagesForProducts/gazarGlavni.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="king_div">
+            <a href="index.html"><img class="img_link " src="ImagesForProducts/gazar-logo.5e89ec05.svg" alt=""></a>
+            <p class="clock"></p>
+            <ul class="homeByHover">
+                <a class="ses" href="index.html">
+                    <li>Գլխավոր</li>
+                </a>
+                <a class="ses" href="Sign.html" target="_blank">
+                    <li>Register</li>
+                </a>
+                <a class="ses" href="contact.html">
+                    <li>Հետադարձ կապ</li>
+                </a>
+                <a class="ses" href="bag.html">
+                    <li>Զամբյուղ</li>
+                </a>
+                <a style="cursor: pointer;" class="darkMode ses">
+                    <li class="WhiteMode">Dark Mode</li>
+                </a>
+
+            </ul>
+        </div>
+    </header>
+
+    <hr>
+    <div class="container">
+        <div class="contact_form">
+            <div class="form">
+                <h1 class="conectAdmin">Conect With Admin</h1>
+                <form>
+                    <div class="form-item">
+                        <!-- <label class="row colorOfItems">Name Surname*</label> -->
+                        <input class="width-item bs" type="text" placeholder="Name">
+                    </div>
+                    <div class="form-item">
+                        <!-- <label class="row colorOfItems">Email*</label> -->
+                        <input class="width-item bs1" type=" text" placeholder="Last Name">
+                    </div>
+                    <div class="form-item">
+                        <!-- <label class="row colorOfItems">Phone</label> -->
+                        <input class="width-item bs2" type="number" placeholder="+(374) XX-XXX-XXX">
+                    </div>
+                    <div class="form-item">
+                        <!-- <label class="row colorOfItems">Country*</label> -->
+                        <select class="width-item bs3">
+                            <option>Armenia</option>
+                            <option>Russia</option>
+                            <option>USA</option>
+                            <option>Canadas</option>
+                            <option>UK</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>Australia</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <!-- <label class="row colorOfItems">Messages</label> -->
+                        <textarea cols="num" rows="num" class="width-item bs4"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <input class="width-item bs5 height" type="submit" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1811.9416440736265!2d44.54461791105271!3d40.20215632051798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa32a36bacd8d%3A0x871cb32ccb98143b!2z1YrVodaA1bjWgtW11oAg1Y3Wh9Wh1a8!5e0!3m2!1sen!2s!4v1635019156318!5m2!1sen!2s"
+                width="600px" height="510px" style="border:9;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+    <script>
+        setInterval(() => {
+
+            const clock = document.querySelector('.clock')
+            let date = new Date()
+
+
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let sec = date.getSeconds()
+            let ampm = hours >= 12 ? 'Pm' : 'Am';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            let strTime = hours + ':' + minutes + ':' + sec + " " + ampm;
+
+            clock.innerHTML = strTime
+
+
+        }, 0);
+
+        let darkMode = document.querySelector('.darkMode')
+        darkMode.onclick = () => {
+            document.querySelector('body').style.background = '#010409'
+            document.querySelector('.king_div').style.background = '#010409'
+            document.querySelector('.container').style.background = '#010409'
+
+            let h4 = document.querySelectorAll('.container h4 ')
+            h4.forEach(pp => {
+                pp.style.color = `white`
+            })
+            for (let i = 0; i < h4.length; i++) {
+                h4[i].style.color = 'white'
+            }
+
+
+            let span = document.querySelectorAll('.container p ')
+            span.forEach(spann => {
+                spann.style.color = 'white'
+            })
+            for (let i = 0; i < span.length; i++) {
+                span[i].style.color = 'white'
+            }
+
+            let h1 = document.querySelectorAll('h1')
+            h1.forEach(h11 => {
+                h11.style.color = 'white'
+            })
+            for (let i = 0; i < h1.length; i++) {
+                h1[i].style.color = "white"
+            }
+
+
+
+            const elements = document.querySelectorAll(".ses");
+            elements.forEach(element => {
+                element.style.color = "white";
+            });
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.color = "white";
+            }
+
+
+            let show = document.querySelectorAll('.dropdown-content a')
+            show.forEach(showw => {
+                showw.style.color = 'white'
+            })
+            for (let i = 0; i < show.length; i++) {
+                show[i].style.color = 'white'
+            }
+
+
+            let addItem = document.querySelectorAll('.addItem > a > h3')
+            addItem.forEach(addItemm => {
+                addItemm.style.background = 'white'
+                addItemm.style.borderRadius = '20px'
+                addItemm.style.width = '150px'
+                addItemm.style.textAlign = 'center'
+
+            })
+            for (let i = 0; i < addItem.length; i++) {
+                addItem[i].style.background = 'white'
+            }
+
+
+            let iimg = document.querySelectorAll('.addItem > i > img')
+
+            iimg.forEach(iimgg => {
+                iimgg.style.background = `white`
+            })
+            for (let i = 0; i < iimg.length; i++) {
+                iimg[i].style.background = "white"
+            }
+
+
+            // let dropdownContent = document.querySelectorAll('.dropdown .dropdown-content')
+            // dropdownContent.forEach(dropdownContentt => {
+            //     dropdownContentt.style.background = '#393B3F'
+            //     dropdownContentt.style.borderRadius = ' 20px'
+            // })
+
+            // for (let i = 0; i < dropdownContent.length; i++) {
+            //     dropdownContentt.style.background = '#393B3F'
+            // }
+
+
+            let WhiteMode = document.querySelector('.WhiteMode')
+            WhiteMode.innerHTML = "WhiteMode"
+
+
+
+            const clock = document.querySelector('.clock')
+            clock.style.color = "white"
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

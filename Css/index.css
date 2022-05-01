@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+img {
+    width: 100%;
+}
+
+.img_link {
+    width: 250px;
+    display: block;
+}
+
+.homeByHover a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 50px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    list-style-type: none;
+    transition: color .35s ease;
+
+}
+
+.homeByHover a:nth-child(1) {
+    color: #90d3a6;
+}
+
+.homeByHover a:hover {
+    color: #90d3a6;
+}
+
+.king_div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 25px 50px;
+
+}
+
+
+
+.filtringItems {
+    background-color: rgb(31, 31, 46);
+    width: 100%;
+    height: 70px;
+}
+
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    /* height: 100%; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 0 3px #c1c1c1;
+    /* position: fixed; */
+    display: block;
+}
+
+header .container {
+    height: 100%;
+}
+
+
+
+/* ProductForGazar.am */
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kingDiv {
+    width: 25%;
+}
+
+.container h4 {
+    display: inline;
+    padding-left: 100px;
+    font-size: 17px;
+}
+
+.buttons {
+    width: 50px;
+    height: 35px;
+    font-size: 25px;
+}
+
+.InputOfNumber {
+    text-align: center;
+    width: 50px;
+    height: 35px;
+}
+
+
+.container p {
+    margin: 25px 5px;
+    padding-left: 130px;
+}
+
+.inputs {
+    display: flex;
+    margin-left: 85px;
+}
+
+.container span {
+    margin: 0 120px;
+    color: #90d3a6;
+    font-size: 25px;
+}
+
+.container h3 {
+    font-weight: 200;
+    margin: 50px 120px 0;
+    color: black;
+}
+
+.addItem {
+    display: flex;
+    font-size: 20px;
+    align-items: flex-end;
+    margin-left: -40px;
+}
+
+.imageOfIcon {
+    width: 20px;
+    margin-left: -115px;
+}
+
+.addItem h3:hover {
+    background-color: #0000007c;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+footer {
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #c1c1c1;
+}
+
+footer ul li {
+    margin-right: 15px;
+}
+
+footer ul li img {
+    width: 50px;
+}
+
+main {
+    height: 100vh;
+    flex: 1;
+}
+
+.FirstBlock {
+    width: 20%;
+    height: 70px;
+    background-color: #90d3a6;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 100px;
+}
+
+.FirstimageOfIcon {
+    width: 40px;
+    padding: 20px 0px 0 10px;
+}
+
+.FirstBlock li {
+    padding: 25px 0px 0 10px;
+    margin-left: 30px;
+    font-size: 25px;
+    margin: -9px 60px auto;
+    color: white;
+    list-style-type: none;
+}
+
+.MenuOfirstBlock {
+    display: none;
+}
+
+
+
+
+.FirstBlock ul li:hover .MenuOfirstBlock {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+
+footer {
+    background-color: rgb(38 38 38);
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+hr {
+    margin-bottom: 20px;
+}
+
+.footer-king-div h4 {
+    margin: 0 auto;
+    display: table;
+}
+
+
+/* .Categories {
+    display: none;
+} */
+
+.Categories ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px 0 0 100px;
+    display: inline-block;
+    width: 490px;
+    padding: 11px 10px;
+    color: #666;
+    line-height: 24px;
+    position: relative;
+}
+
+.Categories ul li a:hover {
+    color: #90d3a6;
+}
+
+.footer-king-div {
+    margin-left: 40px;
+}
+
+.footer-king-div img {
+    width: 50px;
+    margin: 30px 0 0px 10px;
+}
+
+/* ------- */
+
+
+.dropbtn {
+    background-color: #90d3a6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 100%;
+    width: 450px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #90d3a6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff38;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-top: 28px;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+    margin-left: 25px;
+    height: 500px;
+    font-size: 20px;
+    box-shadow: 1px 0px 9px;
+    font-family: sans-serif;
+
+}
+
+
+.FirstimageOfIcon img {
+    margin-top: 10px;
+    width: 25px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.dropbtn span {
+    font-size: 20px;
+}
+
+input {
+    text-align: center;
+    width: 30px;
+}
+
+
+
+
+.quantity {
+    margin-left: 80px;
+}
+
+.quantity button {
+    width: 50px;
+    height: 35px;
+    font-size: 25px;
+}
+
+.quantity input {
+    width: 50px;
+    height: 35px;
+    font-size: 25px;
+
+}
+
+.clock {
+    font-size: 30px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8f8f8f;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #7f1d1d;
+}

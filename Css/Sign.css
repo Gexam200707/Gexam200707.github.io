@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    background-color: rgba(172, 182, 194, 0.46);
+
+}
+
+.king_div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 25px 50px;
+}
+
+.homeByHover a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    padding: 12px 50px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    list-style-type: none;
+    transition: color .35s ease;
+}
+
+.homeByHover a:nth-child(2) {
+    color: #90d3a6;
+}
+
+img {
+    width: 256px;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 3px #c1c1c1;
+    /* position: fixed; */
+    display: block;
+}
+
+
+label {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input {
+    display: inline;
+    margin-left: 10px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    margin: 0 0 20px 20px;
+
+}
+
+.width-item {
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+
+
+.confirm {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    background-color: #ffc7c7cf;
+}

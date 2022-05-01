@@ -1,0 +1,111 @@
+@media screen and (max-width:1320px) {
+    header .homeByHover a {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .dropbtn {
+        width: 245px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    header .homeByHover a {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    header .img_link {
+        width: 180px;
+        margin-right: 50px;
+    }
+}
+
+
+
+@media screen and (max-width:1010px) {
+
+
+    .kingDiv .image img {
+        width: 250px;
+    }
+
+    .imageOfIcon {
+        margin: 0 auto;
+    }
+
+    .kingDiv p {
+        display: flex;
+    }
+
+    * {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .king_div {
+        margin-bottom: 50px;
+    }
+
+    .quantity {
+        margin-left: 130px;
+    }
+
+    .addItem {
+        display: flex;
+        font-size: 20px;
+        align-items: flex-end;
+        margin-left: -15px;
+        flex-wrap: wrap;
+    }
+
+    .homeByHover {
+        padding: 5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:607px) {
+    .container h3 {
+        margin: 50px 60px 0;
+    }
+
+    .container span {
+        margin: 0 83px;
+    }
+
+}
+
+.zoom {
+
+    transition: transform 1s;
+
+}
+
+.zoom:hover {
+    -ms-transform: scale(3);
+    /* IE 9 */
+    -webkit-transform: scale(2);
+    /* Safari 3-8 */
+    transform: scale(.8);
+}
+
+.quantity {
+    display: flex;
+}
+
+.quantity input {
+    text-align: center;
+}
+
+.quantity button {
+    text-align: center;
+}
+
+.clock {
+    font-size: 20px;
+}

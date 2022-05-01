@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(97, 97, 195, 1) 36%, rgba(0, 212, 255, 1) 100%);
+}
+
+.contact_form {
+    justify-content: space-around;
+    display: block;
+}
+
+
+
+.row {
+    display: block;
+
+}
+
+.contact_map {
+    display: inline;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.container {
+    justify-content: space-between;
+
+    display: flex;
+}
+
+.king_div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 25px 50px;
+}
+
+.homeByHover a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    padding: 12px 50px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    list-style-type: none;
+    transition: color .35s ease;
+}
+
+.homeByHover a:nth-child(3) {
+    color: #90d3a6;
+}
+
+img {
+    width: 256px;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 3px #c1c1c1;
+    /* position: fixed; */
+    display: block;
+}
+
+.width-item {
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 18px 0 0 20px;
+}
+
+.form-item textarea {
+    width: 600px;
+    height: 100px;
+    resize: vertical;
+    resize: horizontal;
+}
+
+.form-item {
+    margin-left: 20px;
+}
+
+
+.height {
+    height: 100px;
+}
+
+.colorOfItems {
+    background-color: #4f4e4e36;
+}
+
+.conectAdmin {
+    text-align: center;
+}
